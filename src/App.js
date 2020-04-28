@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Title from "./components/Title.js";
 import Pokemon from "./components/Pokemon";
@@ -40,14 +39,14 @@ function App() {
     <div className="App">
       <main>
         <Title content="Some Example Title" />
-        {all_pokemon.map((pokemon) => {
+        {all_pokemon.map(({ name, weight, awesome, terrifying, abilities }) => {
           return (
             <Pokemon
-              name={pokemon.name}
-              weight={pokemon.weight}
-              awesome={pokemon.awesome}
-              terrifying={pokemon.terrifying}
-              abilities={pokemon.abilities}
+              name={name}
+              weight={weight}
+              awesome={awesome}
+              terrifying={terrifying}
+              abilities={abilities}
             />
           );
         })}
