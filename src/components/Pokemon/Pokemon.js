@@ -1,6 +1,6 @@
 // src/components/Pokemon.js
 import React from "react";
-import pokemon from "./Pokemon.scss";
+import "./Pokemon.scss";
 
 function Pokemon({ name, weight, awesome, terrifying, abilities }) {
   return (
